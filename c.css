@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#home{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#nav{
+    z-index: 1000;
+    transform: translate(-100%);
+    transition: 0.4s linear;
+}
+#nav.active{
+    transform: translate(0);
+}
+#links a{
+    text-shadow: 0 0 5px black;
+}
+#home{
+    display: block;
+}
+#home.active{
+    display: none;
+    transition-delay: 0.3s;
+}
+#who{
+    z-index: 1000;
+    transform: translate(-100%);
+    transition: 0.4s linear;
+    background: linear-gradient(to right bottom,#4d6530,#c5c0a9 );
+}
+#who.active{
+    transform: translate(0);
+    transition: 0.4s linear;
+}
+#WhoMain{
+    height: 600px;
+    display: none;
+}
+#WhoMain.active{
+    display: block;
+}
+#five{
+    z-index: 10000;
+    background: linear-gradient(to right bottom,#4d6530,#c5c0a9 );
+    transition: 0.4s linear;
+    transform: translate(-100%);
+}
+#five.active{
+    transform: translate(0);
+    transition: 0.4s linear;
+}
+.none{
+    pointer-events: none;
+}
+#Whocon{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#board{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
